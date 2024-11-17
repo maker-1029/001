@@ -1,0 +1,146 @@
+/* 基本樣式設置 */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* 深色背景 */
+    color: #ffffff; /* 文字顏色為白 */
+}
+
+header {
+    text-align: center;
+    background: linear-gradient(90deg, #ff4d4d, #ff6600); /* 漸層背景 */
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Header 圖片樣式 */
+.header-image {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Features 區域 */
+.features {
+    padding: 20px;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ff9900; /* 突顯標題顏色 */
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 自適應網格 */
+    gap: 20px;
+}
+
+.feature {
+    background: #222;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.feature-image {
+    width: 100%;
+    max-width: 250px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+/* 影片輪播區域樣式 */
+.video-section {
+    padding: 20px;
+    text-align: center;
+    background-color: #1a1a1a; /* 深色背景 */
+    color: #ffffff;
+    margin: 20px 0;
+    border-top: 2px solid #444; /* 分隔線 */
+}
+
+.video-section h2 {
+    font-size: 2rem;
+    color: #00ccff;
+    margin-bottom: 10px;
+}
+
+.video-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+
+
+/* 規格區 */
+.specifications {
+    padding: 20px;
+    text-align: center;
+}
+
+.specifications h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #00ccff;
+}
+
+.spec-image {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* 表格樣式 */
+.spec-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #1a1a1a;
+}
+
+.spec-table th, .spec-table td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: center;
+}
+
+.spec-table th {
+    background-color: #444;
+    color: #ffcc00;
+}
+
+.spec-table td {
+    color: #ddd;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1a1a1a;
+    color: #777;
+}
+
+/* 動態效果 */
+.feature:hover, .carousel-item:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
